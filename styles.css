@@ -1,0 +1,70 @@
+/* styles.css */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #121212);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.player-container {
+    max-width: 380px;
+    background: rgba(30, 30, 30, 0.9);
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    background: #2a2a2a;
+    color: white;
+    font-size: 14px;
+    outline: none;
+}
+
+.controls button {
+    background: #ff4f00;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.2s ease-in-out, background 0.3s;
+    box-shadow: 0 4px 10px rgba(255, 79, 0, 0.3);
+}
+
+.controls button:hover {
+    background: #d84315;
+    transform: scale(1.1);
+}
+
+.volume-control {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 10px;
+}
+
+.volume-control label {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.volume-control input {
+    accent-color: #ff4f00;
+    width: 80px;
+}
